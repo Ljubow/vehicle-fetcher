@@ -1,0 +1,13 @@
+body{
+  background-color: #ff9999;
+ background-size: 100%;
+}
+h1 {
+  border-bottom: 2px solid white;
+    text-align:  center;
+color: white;
+   }
+   .center {
+       width: 1000px;
+       margin: auto;
+     }
