@@ -1,5 +1,6 @@
 body{
-  background-color: #ff9999;
+  background-image: url("http://obrazovanie.by/wp-content/uploads/2016/06/books.jpg");
+  /*background-color: #ff9999;*/
  background-size: 100%;
 }
 h1 {
