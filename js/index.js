@@ -21,7 +21,6 @@ const ready = () => {
                 description: myArrs[i].volumeInfo.description || 'No description',
 
               };
-              // let gggg = myArrs[i].volumeInfo.description.gggg || {}
                 content += `<div class='card-columns'>` +
                     `<div class='card' style="width: 300px;">` +
                     `<img class="rounded mx-auto d-block" src='${data.img}'` +
