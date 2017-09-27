@@ -1,0 +1,42 @@
+h1 {
+    text-align: center;
+}
+
+h2 {
+    text-align: center;
+    max-height: 40px;
+    overflow: hidden;
+}
+
+.rounded {
+    height: 170px;
+}
+
+.col-md-4 {
+    border: 1px solid black;
+    margin-left: 50px;
+    margin-top: 20px
+}
+
+.book-body {
+    margin-top: 20px;
+}
+
+.primary-info {
+    height: 110px;
+}
+
+.row p {
+    max-height: 80px;
+    overflow: auto;
+}
+
+.container-fluid {
+    text-align: center;
+}
+
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
