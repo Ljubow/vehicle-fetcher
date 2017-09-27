@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 body {
     background-image: url("file:///D:/project/2/img/4849.jpg");
     background-repeat: no-repeat;
@@ -9,6 +10,8 @@ body {
   background: #000;
   color: white;
 }
+=======
+>>>>>>> f05db0c64ba3baeaf01ba83053bcb5825da7f5c8
 h1 {
     text-align: center;
 }
@@ -17,7 +20,10 @@ h2 {
     text-align: center;
     max-height: 40px;
     overflow: hidden;
+<<<<<<< HEAD
     color: white;
+=======
+>>>>>>> f05db0c64ba3baeaf01ba83053bcb5825da7f5c8
 }
 
 .rounded {
@@ -25,9 +31,12 @@ h2 {
 }
 
 .col-md-4 {
+<<<<<<< HEAD
   display: block;
   opacity: 0.7;
   background: #000;
+=======
+>>>>>>> f05db0c64ba3baeaf01ba83053bcb5825da7f5c8
     border: 1px solid black;
     margin-left: 50px;
     margin-top: 20px
@@ -42,9 +51,14 @@ h2 {
 }
 
 .row p {
+<<<<<<< HEAD
     max-height: 75px;
     overflow: auto;
     color: white;
+=======
+    max-height: 80px;
+    overflow: auto;
+>>>>>>> f05db0c64ba3baeaf01ba83053bcb5825da7f5c8
 }
 
 .container-fluid {
@@ -56,8 +70,11 @@ h2 {
     margin-left: auto;
     margin-right: auto;
 }
+<<<<<<< HEAD
 .pagination {
     width: 100%;
     display: inline-block;
      text-align:center;
 }
+=======
+>>>>>>> f05db0c64ba3baeaf01ba83053bcb5825da7f5c8
