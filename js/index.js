@@ -1,3 +1,4 @@
+let more = [];
 let start = 0;
 let step = 12;
 
@@ -57,9 +58,9 @@ function Books(){
                      ${footer}
                  </div>`
             });
-
-            const elem = document.querySelector('.row');
-            elem.innerHTML = content;
+            more.push(content)
+                       const elem = document.querySelector('.row');
+                       elem.innerHTML = more;
         }
     }
     request.open('GET', `${url}${params}`, true);
