@@ -2,7 +2,7 @@ let more = [];
 let start = 0;
 let step = 12;
 
-function Books(){
+function Books() {
     const request = new XMLHttpRequest;
     const url = 'https://www.googleapis.com/books/v1/volumes?q=j:keyes&key=AIzaSyCQHwYgHthKdQzPFjB7FZ7JCmEE6UxOtM8';
     let params = `&startIndex=${encodeURIComponent(start)}&maxResults=${encodeURIComponent(step)}`;
@@ -59,8 +59,8 @@ function Books(){
                  </div>`
             });
             more.push(content)
-                       const elem = document.querySelector('.row');
-                       elem.innerHTML = more;
+            const elem = document.querySelector('.row');
+            elem.innerHTML = more;
         }
     }
     request.open('GET', `${url}${params}`, true);
@@ -69,7 +69,7 @@ function Books(){
 Books();
 
 function fetchBooks() {
-  Books()
+    Books()
 }
 
 document.querySelector('.pagination').addEventListener('click', e => {
