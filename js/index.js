@@ -1,17 +1,17 @@
-let more = [];
+let books = [];
 let start = 0;
 let step = 12;
 
-function Books() {
+function fetchBooks() {
+    const elem = document.querySelector('.row');
     const request = new XMLHttpRequest;
     const url = 'https://www.googleapis.com/books/v1/volumes?q=j:keyes&key=AIzaSyCQHwYgHthKdQzPFjB7FZ7JCmEE6UxOtM8';
-    let params = `&startIndex=${encodeURIComponent(start)}&maxResults=${encodeURIComponent(step)}`;
+    const params = `&startIndex=${encodeURIComponent(start)}&maxResults=${encodeURIComponent(step)}`;
 
     request.onreadystatechange = function() {
 
         if (this.readyState == 4 && this.status == 200) {
             let content = '';
-            console.log(JSON.parse(this.responseText))
             let myArrs = JSON.parse(this.responseText).items;
 
             myArrs.map((item) => {
@@ -58,20 +58,14 @@ function Books() {
                      ${footer}
                  </div>`
             });
-            more.push(content)
-            const elem = document.querySelector('.row');
-            elem.innerHTML = more;
+            books.push(content)
+            elem.innerHTML = books;
         }
     }
     request.open('GET', `${url}${params}`, true);
     request.send();
 }
-Books();
-
-function fetchBooks() {
-    Books()
-}
-
+fetchBooks();
 document.querySelector('.pagination').addEventListener('click', e => {
     e.target.getAttribute('data-id') === 'btn'
     start += step;
