@@ -66,8 +66,7 @@ function fetchBooks() {
     request.send();
 }
 fetchBooks();
-document.querySelector('.pagination').addEventListener('click', e => {
-    e.target.getAttribute('data-id') === 'btn'
+document.getElementById('btn').addEventListener('click', e => {
     start += step;
     fetchBooks();
 
